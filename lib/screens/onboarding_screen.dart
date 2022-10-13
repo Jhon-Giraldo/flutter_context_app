@@ -3,11 +3,13 @@ import 'package:context/widgets/widgets.dart';
 
 
 class OnboardingScreen extends StatelessWidget {
-  const OnboardingScreen({super.key});
 
+  const OnboardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+    
     return Scaffold(
       body: Center(
         child: Column(

@@ -17,6 +17,8 @@ class MyApp extends StatelessWidget {
       routes: {
         'onboardingScreen': (_) => const OnboardingScreen(),
         'home': (_) => const HomeScreen(),
+        'responsive': (_) => const ResponsiveScreen(),
+        'pragmaticos': (_) => const PragmaticosScreen(),
       },
     );
 
@@ -26,9 +28,14 @@ class MyApp extends StatelessWidget {
   ThemeData customTheme() {
     return ThemeData(
 
+      //Custom Colors
+      primaryColor: const Color(0xff170339),
+      indicatorColor: const Color(0xffF8AF3C),
+      canvasColor: const Color(0xff1D1D1B),
+
       //Custom AppbarTheme
       appBarTheme: const AppBarTheme(
-        color: Color(0xff170339), 
+        color: Color(0xff170339),
         elevation: 0
       ),
 
