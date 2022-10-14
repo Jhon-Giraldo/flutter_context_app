@@ -20,7 +20,7 @@ class CustomStartButton extends StatelessWidget {
           //Custom PragmaIcon
           ImageIcon(
             AssetImage('assets/isotipo.png'), 
-            size: 45, color: Color(0xff6429CD)
+            size: 45
           ),
           
           Text(

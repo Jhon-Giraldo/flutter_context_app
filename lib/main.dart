@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
         'onboardingScreen': (_) => const OnboardingScreen(),
         'home': (_) => const HomeScreen(),
         'responsive': (_) => const ResponsiveScreen(),
-        'pragmaticos': (_) => const PragmaticosScreen(),
+        'scaffold': (_) => const ScaffoldScreen(),
+        'pragmaticos': (_) => const PragmaticosScreen()
       },
     );
 

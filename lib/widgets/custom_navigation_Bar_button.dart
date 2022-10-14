@@ -1,54 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:context/screens/screens.dart';
 
-class CustomNavigationBarButton extends StatefulWidget {
-  const CustomNavigationBarButton ({super.key});
+class CustomNavigationBarButton extends StatelessWidget {
+  const CustomNavigationBarButton({super.key, required this.currentIndex, required this.onItemTap});
 
-  @override
-  State<CustomNavigationBarButton> createState() => _CustomNavigationBarButtonState();
-}
-
-
-
-class _CustomNavigationBarButtonState extends State<CustomNavigationBarButton> {
-
-  @override
-  void didUpdateWidget(covariant CustomNavigationBarButton oldWidget) {
-    
-    super.didUpdateWidget(oldWidget);
-  }
-
-  @override
-  void deactivate() {
-    
-    super.deactivate();
-  }
+  final int currentIndex;
+  final void Function(int) onItemTap;
 
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
 
       showSelectedLabels: true,
-      showUnselectedLabels: true,
+      showUnselectedLabels: false,
       //Custom Colors
       selectedItemColor: Theme.of(context).indicatorColor,
       backgroundColor: Theme.of(context).canvasColor,
       unselectedItemColor: Colors.white30,
-      currentIndex: 0,
 
       items: const [
         BottomNavigationBarItem(
-          icon: Icon(Icons.sync_rounded, size: 30),
-          label: 'Widgets'
-        ),
+            icon: Icon(Icons.build_outlined, size: 30), label: 'Widgets'),
         BottomNavigationBarItem(
-          icon: Icon(Icons.brush, size: 30),
-          label: 'Context'
-        ),
+            icon: Icon(Icons.brush, size: 30), label: 'Context'),
         BottomNavigationBarItem(
-          icon: Icon(Icons.person_outline_outlined, size: 30),
-          label: 'Pragmáticos'
-        )
-      ]
+            icon: Icon(Icons.wallpaper_outlined, size: 30), label: 'Scaffold'),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.person_outline_outlined, size: 30),
+            label: 'Pragmáticos')
+      ],
+      currentIndex: currentIndex,
+      onTap: onItemTap,
+
     );
   }
 }
