@@ -1,4 +1,6 @@
+import 'package:context/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+
 
 
 class ScaffoldScreen extends StatelessWidget {
@@ -7,10 +9,18 @@ class ScaffoldScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Hola desde Scaffold'),
-     ),
-   );
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+
+      Image.asset(
+        'assets/logo_pragma.png',
+        scale: 5,
+      ),
+            
+      const CustomElevatedButton(),
+
+      ],
+    );
   }
 }

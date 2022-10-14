@@ -21,7 +21,7 @@ class _ResponsiveScreenState extends State<ResponsiveScreen> {
     _width = random.nextInt(300).toDouble() + 70;
     _height = random.nextInt(300).toDouble() + 70;
     _color = Color.fromRGBO(
-      random.nextInt(255), 
+      random.nextInt(255),
       random.nextInt(255), 
       random.nextInt(255), 
       1
@@ -37,7 +37,7 @@ class _ResponsiveScreenState extends State<ResponsiveScreen> {
     return Scaffold(
       body: Center(
         child: AnimatedContainer(
-          duration: const Duration(milliseconds: 400),
+          duration: const Duration(milliseconds: 300),
           curve: Curves.easeInOutCubic,
           width: _width,
           height: _height,
@@ -48,11 +48,11 @@ class _ResponsiveScreenState extends State<ResponsiveScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: ImageIcon(
+        onPressed: changeShape,
+        child: const ImageIcon(
             AssetImage('assets/isotipo.png'), 
             size: 55,
           ),
-        onPressed: changeShape,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniEndTop,
    );
