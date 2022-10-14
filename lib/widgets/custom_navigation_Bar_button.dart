@@ -19,10 +19,10 @@ class CustomNavigationBarButton extends StatelessWidget {
       unselectedItemColor: Colors.white30,
 
       items: const [
+        // BottomNavigationBarItem(
+        //     icon: Icon(Icons.build_outlined, size: 30), label: 'Widgets'),
         BottomNavigationBarItem(
-            icon: Icon(Icons.build_outlined, size: 30), label: 'Widgets'),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.brush, size: 30), label: 'Context'),
+            icon: Icon(Icons.brush, size: 30), label: 'Responsive'),
         BottomNavigationBarItem(
             icon: Icon(Icons.wallpaper_outlined, size: 30), label: 'Scaffold'),
         BottomNavigationBarItem(

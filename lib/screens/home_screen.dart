@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   static const List<Widget> _widgetOptions = <Widget>[
 
-    WidgetsScreen(),
+    //WidgetsScreen(),
     ResponsiveScreen(),
     ScaffoldScreen(),
     PragmaticosScreen(),
@@ -42,20 +42,4 @@ class _HomeScreenState extends State<HomeScreen> {
       );
   }
 }
-
-class Persona {
-
-  static const String cerebro = 'si';
-  final String nombre;
-
-  Persona(this.nombre);
-
-  get nombreCerebro => cerebro + nombre;
-
-
-}
-
-final Persona persona = Persona('Harold'); 
-final Persona persona2 = Persona('Stiven'); 
-final Persona persona3 = Persona('Jeisson'); 
 
