@@ -13,7 +13,9 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
+          
           mainAxisAlignment: MainAxisAlignment.center,
+
           children: [
             
             //PragmaPrimaryLogo
@@ -32,13 +34,13 @@ class OnboardingScreen extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyText1
             ),
 
-            const SizedBox(height: 30),
+            SizedBox(height: 30),
 
             //Custom StartButton
-            const CustomStartButton(),
+            CustomStartButton(),
 
           ],
-        )      
+        ),
       ),     
     );
   }
